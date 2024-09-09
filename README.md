@@ -102,19 +102,23 @@ Adiciona todos os arquivos que stiverem no fluxo do git(traked) com status "modi
 
 ### Comandos principais
 
-## git commit -m
+<b>git commit -m</b>
 
-<b>Confirma todas as alterações de arquivos que estejam no fluxo do git (tacked) com status "modifed" e arquivos untraked e manda uma mensagem, se não estiver em staged ver "git add"</b>
+Confirma todas as alterações de arquivos que estejam no fluxo do git (tacked) com status "modifed" e arquivos untraked e manda uma mensagem, se não estiver em staged ver "git add"
 
-## git commit -a -m
+<b>git commit -a -m</b>
 
-<b>Confirma todas as alterações em arquivos já no fluxo (arquivos tracked) sem a nescessidade de antes executar um "git add" e manda uma mensagem, ignora arquivos fora do fluxo do git (untracked)</b>
+Confirma todas as alterações em arquivos já no fluxo (arquivos tracked) sem a nescessidade de antes executar um "git add" e manda uma mensagem, ignora arquivos fora do fluxo do git (untracked)
+
+<b>git push</b>
+
+Atualiza o repoistório remoto.
 
 ## git push
 
-<b>Atualiza o repoistório remoto.</b>
+Atualiza o repositrio remoto
 
-### Cmandos prinicpais
+### Comandos prinicpais
 
 <b>git push</b>
 
@@ -130,25 +134,25 @@ Envia os arquivos commitados do repositório local para o repoistório remoto.
 
 Lista as branchs atual do repositorio local
 
-<b>git branch -d "nomeBranch"</b>
+<b>git branch -d "branchName"</b>
 
-Deleta a branch local
+Deleta a branch local "branchName"
 
-<b>git push origin --delete nomeBracnh</b>
+<b>git push origin --delete "branchName"</b>
 
-Deleta a branch "nomeBranch" do servidor (github)
+Deleta a branch "branchName" do repoistório remoto
 
 ## git checkout
 
-<b>Responsável por gerenciar branchs</b>
+<b>Responsável por criar e setar branchs</b>
 
 ### Comandos principais
 
-<b>git checkout nomeBranch</b>
+<b>git checkout "branchName"</b>
 
-Cria a branch "nomeBranch"
+Cria a branch "branchName"
 
-<b>git checkout -b "nomeBranch"</b>
+<b>git checkout -b "branchName"</b>
 
 Cria branch e já seta este branch como atual
 
@@ -228,9 +232,9 @@ cria uma tag para branch atual um versionamento do codigo a partir do momento qu
 
 Lista detalhes da tag e modificações contidas no seu historico
 
-<b>git push origin "tageName </b>
+<b>git push origin "tagName"</b>
 
-Envia a "tageName" para o repositório remoto
+Envia a "tagName" para o repositório remoto
 
 <b>git push origin --tags</b>
 
