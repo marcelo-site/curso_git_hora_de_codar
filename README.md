@@ -155,10 +155,13 @@
 ### Comandos
 
 <b>git submodule</b>
+
 lista todos os submodules do repositório
 
 <b>git submodule add origin dirName</b>
+
 adciona um submodulo ao diretorio "dirName"
 
 <b>git push --recurse-submodule=on-demand</b>
-atualiza o submodulo
+
+atualiza o repositório do submodulo
