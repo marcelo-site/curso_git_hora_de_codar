@@ -2,11 +2,21 @@
 
 ## git init
 
-<b>descrição: </b> inicia um repositorio local.
+### Comandos principais
+
+<b>git init</b>
+Inicia um repositorio local
 
 ## git status
 
-<b>descrição: </b> consultar status.
+<b>Ele permite que você veja quais alterações foram preparadas (estágio antes do commit), quais não foram e quais arquivos não estão sendo rastreados pelo Git.
+
+### Comandos principais
+
+<b>git status </b>
+Consultar quais arquivos foram alterados desde o ultimo commit (modifed) e quais foram adicionados (untracked)
+
+<b>descrição: </b>
 
 ## git pull
 
