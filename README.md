@@ -1,12 +1,12 @@
-# Principais Comandos
+# Principais Comandos do git
 
 ## git init
 
 <b>descrição: </b> inicia um repositorio local.
 
-## git remote add origin https://github.com/marcelo-site/repo-name.## git
+## git remote add origin "remote address"
 
-<b>descrição: </b> adiciona origem remota
+<b>descrição: </b> adiciona origem remota indicando um endereço remoto indicado no botão "code" no repositório github
 
 ## git remote -v
 
@@ -16,13 +16,17 @@
 
 <b>descrição: </b> lista origens remota
 
+## git remote rm origin
+
+<b>descrição: </b> remove a origem remota
+
 ## git status
 
 <b>descrição: </b> consultar status.
 
 ## git pull
 
-<b>descrição: </b> atualiza repositorio local de acordo com o gihub
+<b>descrição: </b> atualiza repositorio local de acordo com o github
 
 ## git reset --hard origin nomeBranch
 
@@ -54,7 +58,7 @@
 
 ## git push
 
-<b>descrição: </b> envia o estado atual do repositório local para o ## github
+<b>descrição: </b> envia o estado atual do repositório local para o github, mas só os commitados
 
 ## git branch
 
@@ -79,6 +83,10 @@
 ## git merge nomeBranch
 
 <b>descrição: </b> une o branch atual com "nomeBranch"
+
+## git merge origin/nomeBranch
+
+<b>descrição: </b> une o branch atual com "nomeBranch" do github
 
 ## git stash --hard origin nomeBranch
 
@@ -135,3 +143,22 @@
 ## git fetch
 
 <b>descrição: </b> baixa todos os branchs do repositorio no ## github e pode ser acessado por meio do ## git checkout nomeBranch
+
+## git submodule
+
+<b>descrição: </b> Lista os submodulos
+
+## git submodule
+
+<b>descrição: </b> um submodule é uma subdivisão do repositório que acrescentam outros repositorios dentro do prjeto, se o diretório atual for um submodule os comandos de git funcionam soment para o submodule.
+
+### Comandos
+
+<b>git submodule</b>
+lista todos os submodules do repositório
+
+<b>git submodule add origin dirName</b>
+adciona um submodulo ao diretorio "dirName"
+
+<b>git push --recurse-submodule=on-demand</b>
+atualiza o submodulo
