@@ -4,7 +4,7 @@
 
 <b>descrição: </b> inicia um repositorio local.
 
-## git remote add origin https://## github.com/marcelo-site/repo-name.## git
+## git remote add origin https://github.com/marcelo-site/repo-name.## git
 
 <b>descrição: </b> adiciona origem remota
 
