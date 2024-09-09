@@ -2,19 +2,21 @@
 
 ## git init
 
+<b>Inicia u repositorio local</b>
+
 ### Comandos principais
 
-<b>git init</b>
+#### git init
 
 Inicia um repositorio local
 
 ## git status
 
-<b>Ele permite que você veja quais arquivos foram alterados desde o ultimo commit (arquivos traked com status modifed), quais não foram e quais arquivos não estão sendo rastreados pelo git (arquivos untracked).</b>
+<b> Ele permite que você veja quais arquivos foram alterados desde o ultimo commit (arquivos traked com status modifed), quais não foram e quais arquivos não estão sendo rastreados pelo git (arquivos untracked).</b>
 
 ### Comandos principais
 
-<b>git status </b>
+#### git status
 
 Consultar quais arquivos foram alterados desde o ultimo commit (modifed) e quais foram adicionados (untracked)
 
@@ -24,7 +26,7 @@ Consultar quais arquivos foram alterados desde o ultimo commit (modifed) e quais
 
 ### Comandos principais
 
-<b>git pull</b>
+#### git pull
 
 atualiza repositório local de acordo com o repositório remoto
 
@@ -34,21 +36,21 @@ atualiza repositório local de acordo com o repositório remoto
 
 ### Comandos principais
 
-<b>git remote</b>
+#### git remote
 
 Lida com origens remotas (repositório remoto)
 
-<b>git remote -v</b>
+#### git remote -v
 
 lista o a origem remoto atual
 
-<b>git remote add origin "addresRemote"</b>
+#### git remote add origin "addresRemote"
 
 Adiciona origem remota indicando um endereço remoto indicado no botão "code" no repositório github
 
 Exemplo de como conseguir um "addressRemote" no botão "code" no topo da pagina de um repositório especifico no github ao clicar fornece endereços para fazer clone esse endereço também serve como addressRemote
 
-<b>git remote rm origin</b>
+#### git remote rm origin
 
 remove a origem remota adicionada anteriormente com "git remote add origin"
 
@@ -58,7 +60,7 @@ remove a origem remota adicionada anteriormente com "git remote add origin"
 
 ### Comandos principais
 
-<b>git reset --hard origin nomeBranch</b>
+#### git reset --hard origin nomeBranch
 
 Reseta o repositorio para a ultima versão do repositório remoto
 
@@ -68,7 +70,7 @@ Reseta o repositorio para a ultima versão do repositório remoto
 
 ### Comandos principais
 
-<b>git rm "fileNmae.txt"</b>
+#### git rm "fileNmae.txt"
 
 Remove arquivo "fileName.txt"
 
@@ -78,7 +80,7 @@ Remove arquivo "fileName.txt"
 
 ### Comandos principais
 
-<b>git mv "fileName.ext" "\*/fileName.ext"</b>
+#### git mv "fileName.ext" "\*/fileName.ext"
 
 Move o arquivo "fileName.txt" par "\*/fileName.txt", ou apenas renomeia se os arquivos forem movidos no mesmo diretório
 
@@ -88,11 +90,11 @@ Move o arquivo "fileName.txt" par "\*/fileName.txt", ou apenas renomeia se os ar
 
 ### Comandos principais
 
-<b> git add "fileName.ext"</b>
+#### git add "fileName.ext"
 
 Adiciona o arquivo "fileName.ext", se ele tiver no status aterior ao commit (traked com status modifed ou untracked) para o estágio de commit.
 
-<b>git add .</b>
+#### git add .
 
 Adiciona todos os arquivos que stiverem no fluxo do git(traked) com status "modifed" ou fora do fluxo do git(untracked) para o estágio que podem ser commitados.
 
@@ -102,15 +104,15 @@ Adiciona todos os arquivos que stiverem no fluxo do git(traked) com status "modi
 
 ### Comandos principais
 
-<b>git commit -m</b>
+#### git commit -m
 
 Confirma todas as alterações de arquivos que estejam no fluxo do git (tacked) com status "modifed" e arquivos untraked e manda uma mensagem, se não estiver em staged ver "git add"
 
-<b>git commit -a -m</b>
+#### git commit -a -m
 
 Confirma todas as alterações em arquivos já no fluxo (arquivos tracked) sem a nescessidade de antes executar um "git add" e manda uma mensagem, ignora arquivos fora do fluxo do git (untracked)
 
-<b>git push</b>
+#### git push
 
 Atualiza o repoistório remoto.
 
@@ -120,7 +122,7 @@ Atualiza o repositrio remoto
 
 ### Comandos prinicpais
 
-<b>git push</b>
+#### git push
 
 Envia os arquivos commitados do repositório local para o repoistório remoto.
 
@@ -130,15 +132,15 @@ Envia os arquivos commitados do repositório local para o repoistório remoto.
 
 ### Comandos principais
 
-<b>git branch</b>
+#### git branch
 
 Lista as branchs atual do repositorio local
 
-<b>git branch -d "branchName"</b>
+#### git branch -d "branchName"
 
 Deleta a branch local "branchName"
 
-<b>git push origin --delete "branchName"</b>
+#### git push origin --delete "branchName"
 
 Deleta a branch "branchName" do repoistório remoto
 
@@ -148,11 +150,11 @@ Deleta a branch "branchName" do repoistório remoto
 
 ### Comandos principais
 
-<b>git checkout "branchName"</b>
+#### git checkout "branchName"
 
 Cria a branch "branchName"
 
-<b>git checkout -b "branchName"</b>
+#### git checkout -b "branchName"
 
 Cria branch e já seta este branch como atual
 
@@ -162,91 +164,91 @@ Cria branch e já seta este branch como atual
 
 ### Comandos principais
 
-<b>git merge "nomeBranch"</b>
+#### git merge "nomeBranch"
 
 Une o branch atual com "nomeBranch"
 
-<b>git merge origin/nomeBranch</b>
+#### git merge origin/nomeBranch
 
 une o branch atual com "nomeBranch" do github
 
 ## git stash
 
-<b>semelhante ao "git reset" mas, sem perda do código</b>
+<b>Semelhante ao "git reset" mas, sem perda do código.</b>
 
 ### Comandos principais
 
-<b>git stash --hard origin nomeBranch</b>
+#### git stash --hard origin nomeBranch
 
 Semelhante ao ## git reset mas, sem perda do código
 
-<b>git stach list</b>
+#### git stach list
 
 lista todas as stashs criados indexadas
 
-<b>git stach apply index</b>
+#### git stach apply index
 
 Recupera a stach desse index
 
-<b>git stash show -p index</b>
+#### git stash show -p index
 
 Lista modificações do stach desse index
 
-<b> git stash drop index</b>
+#### git stash drop index
 
 Apaga stach desse index
 
-<b>git stash clear</b>
+#### git stash clear
 
 Apaga todas as stachs
 
 ## git diff
 
-<b>lista modificações feitas em arquivos</b>
+<b>Lista modificações feitas em arquivos</b>
 
 ### Comandos principais
 
-<b>git diff</b>
+#### git diff
 
 Lista modificações feitas em todos arquivos
 
-<b>git diff "fileName.ext"</b>
+#### git diff "fileName.ext"
 
 Lista modificações feitas no arquivo "filaeName.txt"
 
 ## git tag
 
-<b>Responsável por criar um versionamento para branch a partir do momento que foi criada</b>
+<b>Responsável por criar um versionamento para branch a partir do momento que foi criada.</b>
 
 ### Comandos principais
 
-<b>git tag</b>
+#### git tag
 
 Lista todas as tags da branch atual
 
-<b>git tag -a v1.0 -m "tagName" </b>
+#### git tag -a v1.0 -m "tagName"
 
 cria uma tag para branch atual um versionamento do codigo a partir do momento que é criada, acessando posteriormente pelo "tagName"
 
-<b>git show "tagName"</b>
+#### git show "tagName"
 
 Lista detalhes da tag e modificações contidas no seu historico
 
-<b>git push origin "tagName"</b>
+#### git push origin "tagName"
 
 Envia a "tagName" para o repositório remoto
 
-<b>git push origin --tags</b>
+#### git push origin --tags
 
 Envia todas as tags para o repositório remoto
 
 ## git fetch
 
-<b>Lista todas os branchs do repositorio remoto e pode ser acessado por meio do git checkout nomeBranch </b>
+<b>Lista todas os branchs do repositorio remoto e pode ser acessado por meio do git checkout nomeBranch</b>
 
 ### Comandos principais
 
-<b>git fetch</b>
+#### git fetch
 
 baixa todos os branchs do repositorio remoto e pode ser acessado por meio do git checkout "branchNmae"
 
@@ -256,15 +258,15 @@ baixa todos os branchs do repositorio remoto e pode ser acessado por meio do git
 
 ### Comandos principais
 
-<b>git submodule</b>
+#### git submodule
 
 lista todos os submodules do repositório
 
-<b>git submodule add origin dirName</b>
+#### git submodule add origin dirName
 
 adciona um submodulo ao diretorio "dirName"
 
-<b>git push --recurse-submodules=on-demand</b>
+#### git push --recurse-submodules=on-demand
 
 atualiza o repositório do submodulo
 
@@ -274,4 +276,4 @@ atualiza o repositório do submodulo
 
 ## Comandos principais
 
-<b></b>
+####
