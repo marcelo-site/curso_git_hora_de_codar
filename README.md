@@ -250,7 +250,7 @@ baixa todos os branchs do repositorio remoto e pode ser acessado por meio do git
 
 <b>Um submodule é uma subdivisão do repositório que acrescentam outros repositorios dentro do prjeto, se o diretório atual for um submodule os comandos de git funcionam soment para o submodule.</b>
 
-### Comandoos principais
+### Comandos principais
 
 <b>git submodule</b>
 
