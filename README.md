@@ -59,7 +59,7 @@ Reseta o repositorio para a ultima versão do repositório remoto
 
 ## git rm
 
-<b>Remove arquivos no fluxo do git falhando em arquivos com status untraked<b>
+<b>Remove arquivos no fluxo do git falhando em arquivos com status untraked</b>
 
 ### Comandos principais
 
@@ -77,11 +77,11 @@ Move o arquivo "fileName.txt" par "\*/fileName.txt", ou apenas renomeia se os ar
 
 ## git add
 
-<b>Adiciona arquivos modificados a um estágio chamado <b>Staged</b> indicando que estao prontos para o commit
+<b>Adiciona arquivos modificados a um estágio chamado Staged indicando que estao prontos para o commit</b>
 
 ### Comandos principais
 
-<b> git add "fileName.ext"<b>
+<b> git add "fileName.ext"</b>
 Adiciona o arquivo "fileName.ext", se ele tiver no status aterior ao commit (traked com status modifed ou untracked) para o estágio de commit.
 
 <b>git add .</b>
@@ -95,11 +95,11 @@ Adiciona todos os arquivos que stiverem no fluxo do git(traked) com status "modi
 
 ## git commit -m
 
-Confirma todas as alterações que estejam no stágio <b>staged</b> e manda uma mensagem, se não estiver em <b>staged</b> ver <b>"git add"</b>
+<b>Confirma todas as alterações de arquivos que estejam no fluxo do git (tacked) com status "modifed" e arquivos untraked e manda uma mensagem, se não estiver em staged ver "git add"</b>
 
 ## git commit -a -m
 
-Confirma todas as alterações em arquivos já no fluxo (arquivos tracked) sem a nescessidade de antes executar um <b>"git add"</b> e manda uma mensagem, ignora arquivos fora do fluxo do git (untracked)
+<b>Confirma todas as alterações em arquivos já no fluxo (arquivos tracked) sem a nescessidade de antes executar um "git add" e manda uma mensagem, ignora arquivos fora do fluxo do git (untracked)</b>
 
 ## git push
 
@@ -229,3 +229,11 @@ adciona um submodulo ao diretorio "dirName"
 
 <b>git push --recurse-submodules=on-demand</b>
 atualiza o repositório do submodulo
+
+## git show
+
+<b>Serve para todas a alterações feitas em uma branch ou tag</b>
+
+## Comandos principais
+
+<b></b>
