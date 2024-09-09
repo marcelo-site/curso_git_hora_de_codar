@@ -4,57 +4,93 @@
 
 <b>descrição: </b> inicia um repositorio local.
 
-## git remote add origin "remote address"
-
-<b>descrição: </b> adiciona origem remota indicando um endereço remoto indicado no botão "code" no repositório github
-
-## git remote -v
-
-<b>descrição: </b> lista o a origem remoto atual.
-
-## git remote
-
-<b>descrição: </b> lista origens remota
-
-## git remote rm origin
-
-<b>descrição: </b> remove a origem remota
-
 ## git status
 
 <b>descrição: </b> consultar status.
 
 ## git pull
 
-<b>descrição: </b> atualiza repositorio local de acordo com o github
+<b>atualiza repositorio remoto</b>
+
+### Comandos principais
+
+<b>git pull</b>
+atualiza repositorio local de acordo com o github
+
+## git remote
+
+### Comandos principais
+
+<b>git remote</b>
+
+Lida com origens remotas (origens servidor por exemplo o github)
+
+<b>git remote -v</b>
+
+lista o a origem remoto atual
+
+<b>git remote add origin "remote address"</b>
+
+Adiciona origem remota indicando um endereço remoto indicado no botão "code" no repositório github
+
+<b>git remote rm origin</b>
+
+remove a origem remota
 
 ## git reset --hard origin nomeBranch
 
-<b>descrição: </b> reseta o repositorio para a ultima versão do ## github
+<b>reseta o repositorio para a ultima versão do ## github
+<b>descrição: </b>
 
-## git rm file.ext
+## git rm
 
-<b>descrição: </b> remove arquivo
+<b>Remove arquivo<b>
 
-## git mv file.ext dest/\*.ext
+### Comandos principais
 
-<b>descrição: </b> move ou renomeia o arquivo
+<b>git rm "fileNmae.txt"</b>
 
-## git add file.txt
+Remove arquivo "fileName.txt"
 
-<b>descrição: </b> adiciona o arquivo file.ext modificafo.
+## git mv
 
-## git add .
+<b>Move ou renomeia o arquivo</b>
 
-<b>descrição: </b> adiciona todos arquivos modificados.
+### Comandos principais
+
+<b>git mv "fileName.ext" "\*/fileName.ext"</b>
+
+Move o arquivo "fileName.txt" par "\*/fileName.txt", ou apenas renomeia se os arquivos forem movidos no mesmo diretório
+
+<b>descrição: </b>
+
+## git add
+
+<b>Adiciona arquivos modificados a um estágio chamado <b>Staged</b> indicando que estao prontos para o commit
+
+### Comandos principais
+
+<b> git add "fileName.ext"<b>
+
+Adiciona o arquivo "fileName.ext", se ele tiver no status aterior ao commit (modifed ou untracked) para o estágio de commit
+
+<b>git add .</b>
+
+Adiciona todos os arquivos, se ele tiver no status aterior ao commit (modifed ou untracked) para o estágio de commit
 
 ## git commit
 
-<b>descrição: </b> adicona alteração
+<b>Adicona arquivo para o estágio de atualizado, pronto para ser mandado para o github</b>
+
+### Comandos principais
+
+## git commit -m
+
+Confirma todas as alterações que estejam no stágio <b>staged</b> e manda uma mensagem, se não estiver em <b>staged</b> ver <b>"git add"</b>
 
 ## git commit -a -m
 
-<b>descrição: </b> confirmar todas as alterações e manda uma mensagem
+Confirma todas as alterações sem a nescessidade de antes executar um <b>"git add"</b> e manda uma mensagem
 
 ## git push
 
@@ -62,97 +98,133 @@
 
 ## git branch
 
-<b>descrição: </b> lista as branchs atual do repositorio local
+<b>Lida com branches (versões para separar desnvolvimentos paralelos ao principal).</b>
 
-## git branch -d nomeBranch
+### Comandos principais
 
-<b>descrição: </b> deleta a branch local
+<b>git branch</b>
 
-## git push origin --delete nomeBracnh
+Lista as branchs atual do repositorio local
 
-<b>descrição: </b> deleta a branch "nomeBranch" do ## github
+<b>git branch -d "nomeBranch"</b>
 
-## git checkout nomeBranch
+Deleta a branch local
 
-<b>descrição: </b> cria a branch "nomeBranch"
+<b>git push origin --delete nomeBracnh</b>
 
-## git checkout -b nomeBranch
+Deleta a branch "nomeBranch" do servidor (github)
 
-<b>descrição: </b> cria branch e já seta este branch como atual
+## git checkout
 
-## git merge nomeBranch
+<b>Responsável por gerenciar branchs</b>
 
-<b>descrição: </b> une o branch atual com "nomeBranch"
+### Comandos principais
 
-## git merge origin/nomeBranch
+<b>git checkout nomeBranch</b>
 
-<b>descrição: </b> une o branch atual com "nomeBranch" do github
+Cria a branch "nomeBranch"
 
-## git stash --hard origin nomeBranch
+<b>git checkout -b "nomeBranch"</b>
 
-<b>descrição: </b> semelhante ao ## git reset mas, sem perda do código
+Cria branch e já seta este branch como atual
 
-## git stach list
+## git merge
 
-<b>descrição: </b> lista todas as stashs criados indexadas
+<b>Responsável por unir branchs</b>
 
-## git stach apply index
+### Comandos principais
 
-<b>descrição: </b> recupera a stach desse index
+<b>git merge "nomeBranch"</b>
 
-## git stash show -p index
+Une o branch atual com "nomeBranch"
 
-<b>descrição: </b> lista modificações do stach desse index
+<b>git merge origin/nomeBranch</b>
+
+une o branch atual com "nomeBranch" do github
+
+## git stash
+
+<b>semelhante ao "git reset" mas, sem perda do código</b>
+
+### Comandos principais
+
+<b>git stash --hard origin nomeBranch</b>
+
+Semelhante ao ## git reset mas, sem perda do código
+
+<b>git stach list</b>
+
+lista todas as stashs criados indexadas
+
+<b>git stach apply index</b>
+
+Recupera a stach desse index
+
+<b>git stash show -p index</b>
+
+Lista modificações do stach desse index
+
+<b> git stash drop index</b>
+
+Apaga stach desse index
+
+<b>git stash clear</b>
+
+Apaga todas as stachs
 
 ## git diff
 
-<b>descrição: </b> lista modificações feitas em todos arquivos
+<b>lista modificações feitas em arquivos</b>
 
-## git stash drop index
+<b>git diff</b>
 
-<b>descrição: </b> apaga stach desse index
+Lista modificações feitas em todos arquivos
 
-## git stash clear
+<b>git diff "fileName.ext"</b>
 
-<b>descrição: </b> apaga todas as stach
-
-## git diff file.ext
-
-<b>descrição: </b> lista modificações feitas no arquivo
-
-## git tag -a v1.0 -m "tag v1.0"
-
-<b>descrição: </b> cria uma tag para branch atual um versionamento do codigo a partir do momento que é cridao
+Lista modificações feitas no arquivo "filaeName.txt"
 
 ## git tag
 
-<b>descrição: </b> lista todas as tags da branch atual
+<b>Responsável por criar um versionamento para branch a partir do momento que foi criada</b>
 
-## git show nameTag
+### Comandos principais
 
-<b>descrição: </b> lista detalhes da tag e modificações contidas no seu historico
+<b>git tag</b>
 
-## git push origin nameTag
+Lista todas as tags da branch atual
 
-<b>descrição: </b> envia para o servidor a tag
+<b>git tag -a v1.0 -m "tagName" </b>
 
-## git push origin --tags
+cria uma tag para branch atual um versionamento do codigo a partir do momento que é criada, acessando posteriormente pelo "tagName"
 
-<b>descrição: </b> envia para o servidor toas tags
+<b>git show "tagName"</b>
+
+Lista detalhes da tag e modificações contidas no seu historico
+
+<b>git push origin "tageName </b>
+
+Envia a "tageName" para o repositório remoto
+
+<b>git push origin --tags</b>
+
+Envia todas as tags para o repositório remoto
 
 ## git fetch
 
-<b>descrição: </b> baixa todos os branchs do repositorio no ## github e pode ser acessado por meio do ## git checkout nomeBranch
+<b> baixa todos os branchs do repositorio remoto e pode ser acessado por meio do git checkout nomeBranch </b>
+
+### Comandos principais
+
+<b>git fetch</b>
+
+baixa todos os branchs do repositorio remoto e pode ser acessado por meio do git checkout "branchNmae"
 
 ## git submodule
 
-<b>descrição: </b> Lista os submodulos
+<b>Um submodule é uma subdivisão do repositório que acrescentam outros repositorios dentro do prjeto, se o diretório atual for um submodule os comandos de git funcionam soment para o submodule.</b>
 
-## git submodule
-
-<b>descrição: </b> um submodule é uma subdivisão do repositório que acrescentam outros repositorios dentro do prjeto, se o diretório atual for um submodule os comandos de git funcionam soment para o submodule.
-
-### Comandos
+### Comandoos principais
 
 <b>git submodule</b>
 
@@ -162,6 +234,6 @@ lista todos os submodules do repositório
 
 adciona um submodulo ao diretorio "dirName"
 
-<b>git push --recurse-submodule=on-demand</b>
+<b>git push --recurse-submodules=on-demand</b>
 
 atualiza o repositório do submodulo
